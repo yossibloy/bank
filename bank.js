@@ -46,7 +46,7 @@ function init() {
         accDiv.onclick = function (ev) {
             let myAccDiv = ev.target.closest('.account')
             let accountId = myAccDiv.querySelector('span').textContent
-            let listtra = getTransactionByAccounId(accountId)
+            let listtra = getTransactionByAccounId(accountId)  
             document.querySelector('.details-panel').innerHTML = render(templet.trancsion, listtra);
         }
     });

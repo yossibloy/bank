@@ -37,7 +37,7 @@ for (let i = 1; i < 16; i++) {
     account.id = i
     account.clientId = clients[rnd(5)].id
     accounts.push(account)
-    
+
 }
 
 for (let i = 1; i < 100; i++) {
@@ -76,17 +76,16 @@ function getTransactionByAccounId(accId) {
         }
     }
     return arrTransaction
+
 }
 
 function getBalans(acc) {
     let sumBalans = 0;
-    accounts.forEach(acc => {
-        let arrtra = getTransactionByAccounId(acc.id)
-        arrtra.forEach(tra=>{
-            sumBalans+=tra.amount
-        }) 
-    });
-return sumBalans;
+    let arrtra = getTransactionByAccounId(acc.id)
+    arrtra.forEach(tra => {
+        sumBalans += tra.amount
+    })
+    return sumBalans;
 }
 
 accounts.forEach(acc => {
