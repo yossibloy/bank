@@ -47,8 +47,8 @@ function init() {
             let myAccDiv = ev.target.closest('.account')
             let accountId = myAccDiv.querySelector('span').textContent
             let listtra = getTransactionByAccounId(accountId)
-            document.querySelector('.details-panel').innerHTML=render(templet.trancsion, listtra);
-         let u=   document.querySelector('.h2').innerHTML=`<h2>deteil for account ${accountId}<h2>`
+            document.querySelector('.details-panel').innerHTML = render(templet.trancsion, listtra);
+            document.querySelector('.h2').innerHTML = `<h2>deteil for account ${accountId}<h2>`
         }
     });
 }
