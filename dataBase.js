@@ -60,13 +60,6 @@ function getClaientById(cliId) {
     }
 }
 
-function getAccountById(accId) {
-    for (let i = 0; i < accounts.length; i++) {
-        if (accounts[i].id == accId) {
-            return accounts[i]
-        }
-    }
-}
 
 function getTransactionByAccounId(accId) {
     let arrTransaction = []
