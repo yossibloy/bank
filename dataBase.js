@@ -61,6 +61,17 @@ function getClaientById(cliId) {
 }
 
 
+function getAccountById(accId) {
+    for (let i = 0; i < accounts.length; i++) {
+        if (accounts[i].clientId== accId) {
+            return accounts[i]
+        }
+    }
+}
+
+
+
+
 function getTransactionByAccounId(accId) {
     let arrTransaction = []
     for (let i = 0; i < transactions.length; i++) {
