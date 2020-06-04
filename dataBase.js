@@ -62,13 +62,14 @@ function getClaientById(cliId) {
 
 
 function getAccountById(accId) {
+    let arrAccounts=[]
     for (let i = 0; i < accounts.length; i++) {
         if (accounts[i].clientId== accId) {
-            return accounts[i]
+            arrAccounts.push(accounts[i]) 
         }
     }
+    return arrAccounts
 }
-
 
 
 
